@@ -13,6 +13,7 @@ Tools are workflows you can run manually to interact with your AI agent
 | [🛠️ Build Something](https://github.com/PR-Pilot-AI/smart-project-template/actions/workflows/build_something.yaml) | Instruct the AI agent to build something for you using its **[agent capabilities](https://docs.pr-pilot.ai/capabilities.html)**. |
 | [🧙‍♂️ Generate Tool](https://github.com/PR-Pilot-AI/smart-project-template/actions/workflows/generate_tool.yaml) | Instruct the AI agent to generate a new tool for your project. |
 | [🧙‍♂️ Generate Automation](https://github.com/PR-Pilot-AI/smart-project-template/actions/workflows/generate_automation.yaml) | Create a new automation that will run the AI agent automatically when certain events occur. |
+| [🤖 Answer Question](https://github.com/PR-Pilot-AI/smart-project-template/actions/workflows/answer_question.yaml) | Manually trigger this workflow to ask the AI agent a question. The agent will search the code base and/or the internet to provide an answer. |
 
 ## Automations
 Automations are workflows that run automatically when certain events occur
