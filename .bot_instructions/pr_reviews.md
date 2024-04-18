@@ -19,8 +19,11 @@ When reviewing a PR, check the following:
 - Code is SOLID (Single Responsibility Principle, Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, Dependency Inversion Principle)
 
 # Review Structure & Format
-Your comment should be structured as follows:
-- Start with one sentence that sums up your review
-- If (ONLY if) there is room for improvement, provide a bullet point list with distinct, actionable change requests
-- If all looks good, provide a short, positive comment
-Avoid vague comments like "looks good" or "needs improvement". Be specific and actionable.
+Use the following structure when formulating your review:
+
+Your changes look <overall sentiment>. You've <something positive>, but there is room for improvement in <...>:
+- Change <something> in <file> to <reason>
+- Class <class> could use <something>
+- <something> in file <file> could have <implications>
+- It is best practice to <do this>. Consider <change> in <file>
+- etc...
