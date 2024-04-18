@@ -1,4 +1,4 @@
-name: "🛠️ Generate Tool"
+name: "🧙‍♂️ Generate Tool"
 
 on:
   workflow_dispatch:

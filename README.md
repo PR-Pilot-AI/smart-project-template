@@ -20,6 +20,9 @@ A generic tool that passes on your instructions directly to the agent, who will 
 Instruct the AI agent to build something for you using its **[agent capabilities](https://docs.pr-pilot.ai/capabilities.html)**.
 
 
+### 🧙‍♂️ Generate Tool
+Instruct the AI agent to generate a new tool for your project.
+
 ### 🧙‍♂️ Workflow Wizard
 Create new workflows tailored to your project using the **[workflow wizard](https://github.com/PR-Pilot-AI/smart-project-template/actions/workflows/workflow_wizard.yaml)**.
 

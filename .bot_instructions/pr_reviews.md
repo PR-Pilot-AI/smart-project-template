@@ -21,5 +21,6 @@ When reviewing a PR, check the following:
 # Review Structure & Format
 Your comment should be structured as follows:
 - Start with one sentence that sums up your review
-- If there is room for improvement, provide a bullet point list with constructive feedback
-- If there are no issues, provide a short, positive comment
+- If (ONLY if) there is room for improvement, provide a bullet point list with distinct, actionable change requests
+- If all looks good, provide a short, positive comment
+Avoid vague comments like "looks good" or "needs improvement". Be specific and actionable.
