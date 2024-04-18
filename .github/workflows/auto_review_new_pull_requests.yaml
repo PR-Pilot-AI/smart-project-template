@@ -26,7 +26,3 @@ jobs:
           agent-instructions: |
             1. Read `.bot_instructions/pr_reviews.md` for instructions on how to review PRs
             2. Review the PR accordingly and add your review as a comment to the PR
-
-            Your review should be:
-            - Short and concise
-            - Structured around your observations, not around the review instructions

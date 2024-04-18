@@ -18,3 +18,8 @@ When reviewing a PR, check the following:
 - Code is DRY (Don't Repeat Yourself)
 - Code is SOLID (Single Responsibility Principle, Open/Closed Principle, Liskov Substitution Principle, Interface Segregation Principle, Dependency Inversion Principle)
 
+# Review Structure & Format
+Your comment should be structured as follows:
+- Start with one sentence that sums up your review
+- If there is room for improvement, provide a bullet point list with constructive feedback
+- If there are no issues, provide a short, positive comment
