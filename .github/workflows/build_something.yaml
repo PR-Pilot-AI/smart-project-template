@@ -1,0 +1,36 @@
+name: "🛠️ Build Something"
+
+on:
+  workflow_dispatch:
+    inputs:
+      what-to-build:
+        description: 'Specify what to build'
+        required: true
+      purpose:
+        description: 'How does this benefit your project or the end user?'
+        required: true
+
+jobs:
+  build_something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Build Task
+        uses: PR-Pilot-AI/smart-actions/quick-task@v1
+        with:
+          api-key: ${{ secrets.PR_PILOT_API_KEY }}
+          agent-instructions: |
+            The project owner wants you to build something:
+
+            ```
+            ${{ github.event.inputs.what-to-build }}
+            ```
+
+            How this benefits the project or the end user:
+
+            ```
+            ${{ github.event.inputs.purpose }}
+            ```
+            
+            1. Understand what you need to build and why
+            2. If necessary, search the internet for information to accurately fulfill the task.
+            3. Create or modify files according to the build instructions and ensure the changes are useful and relevant to the end user by considering the purpose
