@@ -22,7 +22,7 @@ Create new workflows tailored to your project using the **[workflow wizard](http
 ## Setup
 Smart Actions use **[PR Pilot](https://github.com/PR-Pilot-AI/pr-pilot)** to execute the AI agent on your repository.
 
-1. **[Create a new Github repository](https://github.com/new)** using this template
+1. **[Create a new Github repository using this template](https://github.com/new?template_name=smart-project-template&template_owner=PR-Pilot-AI)**
 2. **[Install PR Pilot](https://github.com/apps/pr-pilot-ai/installations/new)** on your repository
 
 That's it! You now have a Github project with AI-powered workflows.
