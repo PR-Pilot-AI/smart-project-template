@@ -11,7 +11,7 @@ When a new pull request is created, it will automatically be reviewed according 
 ### 🚀 Quick Task Creation
 Instruct your AI agent to do some work on your project using its **[agent capabilities](https://docs.pr-pilot.ai/capabilities.html)**.
 <div align="center">
-<img src="./quick_task.png)" width="300" alt="Quickly hand off work to AI Agent">
+<img src="./quick_task.png" width="300" alt="Quickly hand off work to AI Agent">
 </div>
 
 ### 🧙‍♂️ Workflow Wizard
