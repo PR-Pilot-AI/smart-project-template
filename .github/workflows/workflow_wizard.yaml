@@ -64,7 +64,7 @@ jobs:
             - The step should have the following inputs:
               - `api-key` (similar to reference workflow)
               - `agent-instructions` (Step-by-step instructions for the AI agent)
-            - `agent-instructions` make use of the workflow inputs
+            - `agent-instructions` have the workflow inputs injected into them
             - Workflow has inputs according to the user's instructions
             - Workflow is triggered according to the user's instructions
             
