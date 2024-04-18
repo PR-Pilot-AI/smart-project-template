@@ -1,39 +1,39 @@
-name: "🧙‍♂️ Generate Tool"
+name: "🧙‍♂️ Generate Automation"
 
 on:
   workflow_dispatch:
     inputs:
-      tool-name:
-        description: 'Name of the tool'
+      automation-name:
+        description: 'Name of the automation'
         required: true
-      tool-inputs:
-        description: 'Inputs required for the tool'
+      trigger:
+        description: 'What should trigger the automation?'
         required: true
       agent-instructions:
-        description: 'What should the agent do when the tool is executed?'
+        description: 'What should the agent do when the automation is triggered?'
         required: true
 
 jobs:
-  automate-tool-creation:
+  create-new-automation:
     runs-on: ubuntu-latest
     steps:
-      - name: Automate Tool Creation
+      - name: Create New Automation
         uses: PR-Pilot-AI/smart-actions/quick-task@v1
         with:
           api-key: ${{ secrets.PR_PILOT_API_KEY }}
           agent-instructions: |
             Your task is to generate a new Github workflow.
-            The workflow's purpose is to instruct an AI agent 
-            that can understand and execute instructions based on the workflow inputs.
+            The workflow's purpose is to automate something in the Github repository by using an AI agent 
+            that can understand and execute the instructions provided in the workflow file.
             
-            The workflow should be triggered manually and called `${{ github.event.inputs.tool-name }}`.
+            The workflow should be called `${{ github.event.inputs.automation-name }}`.
             
-            The workflow should have the following inputs:
+            It should run when:
+            ``` 
+            ${{ github.event.inputs.trigger }}
             ```
-            ${{ github.event.inputs.tool-inputs }}
-            ```
             
-            The user wants the agent to do the following:
+            When triggered, the user wants the agent to do the following:
             ```
             ${{ github.event.inputs.agent-instructions }}
             ```
@@ -58,6 +58,6 @@ jobs:
             
             
             Do the following:
-            1. Read `.github/workflows/build_something.yaml` as reference to understand the desired structure of the workflow file.
+            1. Read `.github/workflows/issue_formatter.yaml` as reference to understand the desired structure of the workflow file.
             2. Turn the free-text instructions provided by the user into actionable step-by-step instructions for the AI agent.
             3. Generate the new Github workflow file

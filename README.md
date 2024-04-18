@@ -23,6 +23,9 @@ Instruct the AI agent to build something for you using its **[agent capabilities
 ### 🧙‍♂️ Generate Tool
 Instruct the AI agent to generate a new tool for your project.
 
+### 🧙‍♂️ Generate Automation
+Create a new automation that will run the AI agent automatically when certain events occur.
+
 ### 🧙‍♂️ Workflow Wizard
 Create new workflows tailored to your project using the **[workflow wizard](https://github.com/PR-Pilot-AI/smart-project-template/actions/workflows/workflow_wizard.yaml)**.
 
