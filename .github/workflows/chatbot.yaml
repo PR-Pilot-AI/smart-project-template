@@ -1,0 +1,23 @@
+name: "🤖 Chatbot"
+
+# Triggers the workflow on label 'chat' added to an issue or a comment is made on an issue with 'chat' label
+on:
+  issues:
+    types: [labeled, unlabeled]
+  issue_comment:
+    types: [created]
+
+jobs:
+  handle-chat:
+    runs-on: ubuntu-latest
+    if: >
+      (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'chat') ||
+      (github.event_name == 'issue_comment' && contains(github.event.issue.labels.*.name, 'chat'))
+    steps:
+      - name: Respond to Chat
+        uses: PR-Pilot-AI/smart-actions/quick-task@v1
+        with:
+          api-key: ${{ secrets.PR_PILOT_API_KEY }}
+          agent-instructions: |
+            1. Use the `functions.read_github_issue` function to read the issue.
+            2. Comment on the issue using the `functions.comment_on_github_issue` function, providing a response based on the content read in step 1.
