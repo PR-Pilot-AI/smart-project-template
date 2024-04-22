@@ -18,5 +18,6 @@ jobs:
         with:
           api-key: ${{ secrets.PR_PILOT_API_KEY }}
           agent-instructions: |
+              @${{ github.event.sender.login }} commented on issue #${{ github.event.issue.number }}.
               1. Read the content of issue #${{ github.event.issue.number }}.
               2. Comment on the issue, providing a response to the latest comment
