@@ -10,7 +10,7 @@ jobs:
   handle-chat:
     if: >
       (github.event.label.name == 'chat' || contains(github.event.issue.labels.*.name, 'chat')) &&
-      github.event.sender.login != 'PR-Pilot-AI'
+      github.event.sender.login != 'pr-pilot-ai'
     runs-on: ubuntu-latest
     steps:
       - name: AI Chat Response
