@@ -25,3 +25,4 @@ jobs:
             5. Read, edit, and create Github issues as needed to respond or take action
             6. Use internet search to find information if the issue requires external data
             7. Comment on the issue with the response or the action taken
+            8. Ensure the issue number is injected into the context for accurate tracking
