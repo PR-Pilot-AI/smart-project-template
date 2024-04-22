@@ -54,7 +54,7 @@ jobs:
               - `agent-instructions` (Step-by-step instructions for the AI agent)
             - `agent-instructions` have the workflow inputs injected into them
             - Workflow has inputs according to the user's instructions
-            - Workflow is triggered manually
+            - Workflow is triggered according to user's specification
             
             
             Do the following:
