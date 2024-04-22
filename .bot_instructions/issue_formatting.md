@@ -10,3 +10,5 @@ Every issue should have at least one label. Only the following labels are allowe
 * `enhancement` - for feature requests
 * `question` - for questions
 * `documentation` - for documentation-related tasks
+
+It is IMPORTANT that you do not alter the existing content of the issue body, only the formatting.
