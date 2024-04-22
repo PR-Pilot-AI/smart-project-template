@@ -18,11 +18,5 @@ jobs:
         with:
           api-key: ${{ secrets.PR_PILOT_API_KEY }}
           agent-instructions: |
-            1. Check if the issue has the 'chat' label and is not commented by @PR-Pilot-AI
-            2. If the issue meets the criteria, read the issue to understand the context
-            3. Search the code base if necessary to gather information related to the issue
-            4. Perform CRUD operations on files if required to solve the issue
-            5. Read, edit, and create Github issues as needed to respond or take action
-            6. Use internet search to find information if the issue requires external data
-            7. Comment on the issue with the response or the action taken
-            8. Ensure the issue number is injected into the context for accurate tracking
+              1. Read the content of issue #${{ github.event.issue.number }}.
+              2. Comment on the issue, providing a response to the latest comment
