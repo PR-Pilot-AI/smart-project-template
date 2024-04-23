@@ -1,7 +1,7 @@
 # Smart Project
 
-This project template uses **[Smart Workflows]([https://github.com/PR-Pilot-AI/smart-actions](https://github.com/PR-Pilot-AI/smart-workflows/tree/main))** to add agentic behavior to your Github project.
-It comes with fully-customizable, no-code [Github workflows](https://docs.github.com/en/actions/using-workflows) out-of-the-box:
+This project template uses **[Smart Workflows](https://github.com/PR-Pilot-AI/smart-workflows)** to add agentic behavior to your Github project.
+All tools and automations are fully customizable using natural language.
 
 ## Tools
 
